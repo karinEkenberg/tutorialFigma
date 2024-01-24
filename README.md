@@ -81,7 +81,7 @@ To use this template:
 
 ## Author
 
-[Your Name]
+Karin Ekenberg
 
 ## License
 
