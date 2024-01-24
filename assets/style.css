@@ -1,0 +1,393 @@
+:root {
+    --main-color: #385199;
+    --knappar: #1368AC;
+    --knapp3: #06375F;
+    --knapp4: #8EC0E0;
+    --text: white;
+    --text2: black;
+    --logo-background: #5380A3;
+    --blurr1: #7fc5e65d;
+    --blurr2: #a9afbf5d;
+    --customers: #8ec0e05b;
+    --rectangle: #5380a3c9;
+    --ready-section: #9ad5fd9c;
+    --ready-section2: #054774a4;
+}
+body {
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.left {
+    float: left;
+    font-size: 4em;
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.right {
+    float: right;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.section-head {
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+    width: 100%;
+    margin-right: 0%;
+}
+
+.head {
+    padding-top: 10%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    align-self: center;
+    text-align: left;
+    width: 100%;
+    color: var(--text);
+    font-size: 4em;
+}
+
+.head p {
+    text-align: left;
+    width: 100%;
+    color: var(--text);
+    font-size: 2em;
+}
+ 
+.fig-head {
+    width: 100%;
+}
+
+.fig-img{
+    width: 40%;
+}
+
+.h1-p {
+    width: 40%;
+}
+
+.h1-p p {
+    padding-top: 5%;
+}
+
+.button1 {
+    margin-top: 20%;
+    background-color: var(--knappar);
+    height: 10vh;
+    width: 10vw;
+    border: none;
+    border-radius: 40px;
+    font-size: 2em;
+    color: var(--text);
+}
+
+.button2 {
+    margin-left: 5%;
+    height: 10vh;
+    width: 10vw;
+    background-color: var(--main-color);
+    border-color: var(--knapp4);
+    border-radius: 40px;
+    font-size: 2em;
+    color: var(--text);
+}
+
+.logos {
+    padding-top: 20%;
+    width: 80%;
+    margin: auto;
+}
+
+.logos h2 {
+    color: var(--text);
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.loggor {
+    border-radius: 15px;
+    background-color: var(--logo-background);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-svg {
+    width: 10%;
+}
+
+.head .h1-p h2 {
+    color: var(--text);
+    font-size: 4em;
+}
+
+.fig-image {
+    width: 95%;
+    padding-right: 5%;
+}
+
+.blurr1{
+    background-color: var(--blurr1);
+    height: 95%;
+    width: 25%;
+    border-radius: 50% 0 0 50%;
+    filter: blur(30px);
+    position: absolute;
+    right: 0; /* Adjust the left property to position it within the visible area */
+    top: 50%;
+}
+
+.parent {
+    overflow: hidden;
+}
+
+.blurr2 {
+    background-color: var(--blurr2);
+    height: 60vh;
+    width: 35%;
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    left: 25%; /* Adjust the left property to position it within the visible area */
+    top: -400px;
+}
+
+.peopleText {
+    padding: 10%;
+    width: 50%;
+    background-color: var(--rectangle);
+    border-radius: 15px;
+    height: 40vh;
+}
+
+.peopleText p {
+    font-size: 15px;
+}
+
+.peopleText h3 {
+    font-size: 2em;
+}
+
+.big-div {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    color: var(--text);
+    margin-bottom: 10%;
+}
+
+#customers {
+    position: relative;
+    margin-left: 26%;
+    transform: translateY(50%);
+    margin-top: 5%;
+    overflow: hidden; /* För att dölja överflödigt innehåll som ligger utanför figure-elementet */
+  }
+  
+  #customers::before,
+  #customers::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--customers);/* Justera färgen och opaciteten här */
+    z-index: 1; /* Sätt z-index till ett högre värde än bilden för att ligga ovanpå */
+  }
+  
+  .mom {
+    border-radius: 50%;
+    display: block;
+    width: 5vw;
+  }
+
+  
+#customers2 {
+    position: relative;
+    margin-left: 26%;
+    transform: translateY(50%);
+    margin-top: 3%;
+    overflow: hidden; /* För att dölja överflödigt innehåll som ligger utanför figure-elementet */
+  }
+  
+  #customers2::before,
+  #customers2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--customers);/* Justera färgen och opaciteten här */
+    z-index: 1; /* Sätt z-index till ett högre värde än bilden för att ligga ovanpå */
+  }
+  
+  .woman {
+    border-radius: 50%;
+    display: block;
+    width: 5vw;
+  }
+
+  
+#customers3 {
+    position: relative;
+    margin-left: 26%;
+    transform: translateY(50%);
+    margin-top: 6%;
+    overflow: hidden; /* För att dölja överflödigt innehåll som ligger utanför figure-elementet */
+  }
+  
+  #customers3::before,
+  #customers3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--customers);/* Justera färgen och opaciteten här */
+    z-index: 1; /* Sätt z-index till ett högre värde än bilden för att ligga ovanpå */
+  }
+  
+  .smile {
+    border-radius: 50%;
+    display: block;
+    width: 5vw;
+  }
+
+  .ready-section {
+    width: 80%;
+    text-align: center;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, var(--ready-section), var(--ready-section2));
+  }
+
+  .ready-section h3 {
+    padding-top: 5%;
+    font-size: 2em;
+  }
+
+  .ready-section p {
+    padding-top: 5%;
+    color: var(--text);
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .button3 {
+    margin-top: 3%;
+    background-color: var(--knapp3);
+    height: 10vh;
+    width: 20vw;
+    border: none;
+    border-radius: 40px;
+    font-size: 2em;
+    font-style: italic;
+    color: var(--text);
+  }
+
+  footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer p {
+    color: var(--text);
+    font-size: 1em;
+  }
+
+  footer h2 {
+    color: var(--text);
+    font-size: 1em;
+  }
+
+  .foot {
+    padding-bottom: 5%;
+  }
+
+  #email {
+    margin-top: 3%;
+    background-color: var(--knapp3);
+    border: none;
+    height: 8vh;
+    border-radius: 35px;
+    padding-right: 5px;
+    width: 10vw;
+  }
+
+
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+  #email::placeholder {
+    color: var(--text);
+    padding-left: 8%;
+  }
+
+  .button4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 3%;
+    background-color: var(--text);
+    border: none;
+    height: 8vh;
+    border-radius: 35px;
+    width: 5vw;
+    color: var(--knapp3);
+  }
+
+  #footer {
+    width: 100%;
+    background-color: var(--ready-section);
+    background-image: linear-gradient(to left, var(--knapp3), var(--knapp4), var(--knapp4));
+    height: 10px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+  }
